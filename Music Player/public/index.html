@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+  <audio src=""  id="audio-source"></audio>
+    <div class="home-section">
+
+        <div class="crousel">
+            <img src="./assests/images/cover1.png.jpg" class="active" alt="cover1">
+            <img src="./assests/images/cover2.png.jpg" alt="cover2">
+            <img src="./assests/images/cover3.png.jpg" alt="cover3">
+            <img src="./assests/images/cover4.png.jpg" alt="cover4">
+            <img src="./assests/images/cover5.png.jpg" alt="cover5">
+        </div>
+
+        <h1 class="heading">recently played</h1>
+        <div class="playlists-group">
+
+            <div class="playlist-card">
+              <img src="./assests/images/cover9.png.jpg" alt="cover9" class="playlist-img-card">
+              <p class="playlist-card-name">top international</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assests/images/cover7.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">Bts collections</p>
+              </div>
+
+              <div class="playlist-card">
+                <img src="./assests/images/cover11.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">bollywood hits</p>
+              </div>
+              
+              <div class="playlist-card">
+                <img src="./assests/images/cover4.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">justin biber</p>
+              </div>
+
+              <div class="playlist-card">
+                <img src="./assests/images/cover6.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">top 50</p>
+              </div>
+              
+               <div class="playlist-card">
+                <img src="./assests/images/cover9.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">hollywood hits</p>
+              </div>
+
+              <div class="playlist-card">
+                <img src="./assests/images/cover3.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">best songs</p>
+              </div>
+              
+               <div class="playlist-card">
+                <img src="./assests/images/cover4.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">lollywood hits</p>
+              </div>
+              
+        </div>
+         
+        <h1 class="heading">based on your litenings</h1>
+        <div class="playlists-group">
+
+            <div class="playlist-card">
+              <img src="./assests/images/cover4.png.jpg" alt="cover9" class="playlist-img-card">
+              <p class="playlist-card-name">top international</p>
+            </div>
+
+            <div class="playlist-card">
+                <img src="./assests/images/cover3.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">Bts collections</p>
+              </div>
+
+              <div class="playlist-card">
+                <img src="./assests/images/cover12.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">bollywood hits</p>
+              </div>
+              
+              <div class="playlist-card">
+                <img src="./assests/images/cover2.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">justin biber</p>
+              </div>
+
+              <div class="playlist-card">
+                <img src="./assests/images/cover9.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">top 50</p>
+              </div>
+              
+               <div class="playlist-card">
+                <img src="./assests/images/cover10.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">hollywood hits</p>
+              </div>
+
+              <div class="playlist-card">
+                <img src="./assests/images/cover11.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">best songs</p>
+              </div>
+              
+               <div class="playlist-card">
+                <img src="./assests/images/cover5.png.jpg" alt="cover9" class="playlist-img-card">
+                <p class="playlist-card-name">lollywood hits</p>
+              </div>
+              
+        </div>
+    </div>
+
+    <section class="music-player-section">
+        <img src="./assests/images/back.png" alt="back" class="back-btn icon hide">
+        <img src="./assests/images/nav.png" alt="nav" class="nav-btn icon hide">
+        <h1 class="current-song-name">
+            song 1
+        </h1>
+        <p class="artist-name hide"> artist 1</p>
+        <img src="./assests/images/cover10.png.jpg" alt="cover" class="cover hide">
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+
+        <div class="controls">
+         <span class="fas fa-redo" id="redo"></span>
+         <div class="main">
+            <i class="fa-solid fa-backward active"></i>
+            <i class="fas fa-play active"></i>
+            <i class="fas fa-pause"></i>
+            <i class="fa-solid fa-forward active"></i>
+         </div>
+         <input type="range" class="volume-slider" max="1" value="1" stop="0.1">
+         <span class="fas fa-volume-up"></span>
+        </div>
+    </section>
+
+    <section class="playlist">
+      <img src="assests/images/back.png" alt="back" class="back-btn icon">
+      <h1 class="title">playlist</h1>
+
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="assests/images/cover2.png.jpg" alt="cover">
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">
+          song 1
+        </p>
+
+      </div>
+
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="assests/images/cover3.png.jpg" alt="cover">
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">
+          song 2
+        </p>
+
+      </div>
+
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="assests/images/cover4.png.jpg" alt="cover">
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">
+          song 3
+        </p>
+
+      </div>
+
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="assests/images/cover5.png.jpg" alt="cover">
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">
+          song 4
+        </p>
+
+      </div>
+
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="assests/images/cover6.png.jpg" alt="cover">
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">
+          song 5
+        </p>
+
+      </div>
+
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="assests/images/cover7.png.jpg" alt="cover">
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">
+          song 6
+        </p>
+
+      </div>
+
+      <div class="queue">
+        <div class="queue-cover">
+          <img src="assests/images/cover8.png.jpg" alt="cover">
+          <i class="fas fa-pause"></i>
+        </div>
+        <p class="name">
+          song 7
+        </p>
+
+      </div>
+    </section>
+ 
+    <script src="../src/data.js"></script>  
+    <script  src="../src/app.js"></script>
+</body>
+</html>
